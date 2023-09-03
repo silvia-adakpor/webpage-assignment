@@ -1,0 +1,14 @@
+How the web works.
+When we “browse”, we fill in a URL (Uniform Resource Locator) which helps to locate resources which could be webpages, images, video files etc.
+Two main pieces are involved in this communication:
+The browser/ client which requests the service and computer/server which provides the service. And the message sent between them is formatted based on HTTP. HTTP means hypertext transfer protocol  and it is what clients and servers use to talk to each other
+HTTPS is http with encryption
+Every data exchange using the HTTP protocol involves two messages
+
+HTTP request: from Client/browser to Computer/server which usually contains the message/page it wants get, the host and language to accept
+HTTP response: after the server has understood the request, it sends a response back to the client. This response usually contains the version of the protocol used, the status code, the date and time of the response, the type of content the client is sending back, the HTML code that represents the data requested(eg page, image etc)
+
+When the browser reads the response, it constructs a DOM(Document Object Model) which represents the objects or elements of the  HTMLdocument which are: the building blocks of the page, images, texts, paragraphs etc.
+
+As the browser reads through the response, it would find references to resources in it. It then sends seperate http requests for each resource to fetch it. These requessts are sent in parallel so that the page can be viewed as fast as possible. 
+Once thebrowser has all the resouces, it will then render(display) the HTML Document

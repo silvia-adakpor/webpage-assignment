@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords" content="learning html css courses">
+   <meta name="description" content="Tutorial class for learning html and css">
+    <title>Assignment How the web works</title>
+</head>
+<body>
+    <header>
+        <h1>How the Web Works</h1>
+    </header>
+   <div><p>When we “browse”, we fill in a <b>URL (Uniform Resource Locator)</b> which helps to locate resources which could be webpages, images, video files etc.</p>
+   <p>Two main pieces are involved in this communication:
+    <ul>
+        <li>Browser/Client</li>
+        <li>Server/Computer</li>
+    </ul>
+</p>
+    <img src="https://www.cleantutorials.com/wp-content/uploads/2015/11/how-web-works.png" alt="how the web works">
+<p> The message sent between them is formatted based on HTTP. <b>HTTP</b> means hypertext transfer protocol  and it is what clients and servers use to talk to each other
+    <b>HTTPS</b> is http with encryption
+    </p>
+</div>
+<div><p>Every data exchange using the HTTP protocol involves two messages</p>
+<ul>HTTP request: from Client/browser to Computer/server which usually contains the message/page it wants get, the host and language to accept
+    </ul><ul>HTTP response: after the server has understood the request, it sends a response back to the client. This response usually contains the version of the protocol used, the status code, the date and time of the response, the type of content the client is sending back, the HTML code that represents the data requested(eg page, image etc)
+    </ul><P>When the browser reads the response, it constructs a DOM(Document Object Model) which represents the objects or elements of the  HTMLdocument which are: the building blocks of the page, images, texts, paragraphs etc.
+    </P></div>
+    <div><video width="320" height="240" controls="autoplay">
+        <source src="https://www.youtube.com/watch?v=VRg4XYwxRCE" type=video/mp4>
+      </video>
+      <p>In Summary:</p>
+    <table border="1">
+       <tr> <td>client</td>
+        <td>request</td></tr>
+       <tr> <td>Browser</td>
+        <td>response</td></tr></table>
+    </table></div>
+    <!-- helllo -->
+    <div> <p>For further enquiries please fill in the form below:</p> 
+        <section>
+        <form>
+            <label for="fullname">Full name</label> <input type="text" id="fullname" name="fullname">
+            <label for="email">Email</label> <input type="email" id="email" name="email">
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender" value="male">
+  <label for="male">MALE</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">FEMALE</label><br>
+  <label for="enquiries">Enquiries</label> <input type="text" id="enquiries" name="enquiries">
+        </form></section>
+    </div>
+    
+</body>
+</html>
